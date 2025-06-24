@@ -1,13 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/home-page";
-import CodeCard from "./pages/http-card";
+import CodePage from "./pages/code-page";
 import './App.css'
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/:code" element={<CodeCard />}/>
+      <Route path="/" element={<CodePage />} />
     </Routes>
   );
 }
